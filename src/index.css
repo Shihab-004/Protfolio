@@ -1,0 +1,20 @@
+@import "tailwindcss"; 
+
+* {
+  cursor: none;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(0, 0, 0), #00031d, #001505);
+  background-size: 300% 300%;
+  animation: rgbShift 8s ease infinite;
+}
+
+@keyframes rgbShift {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+
